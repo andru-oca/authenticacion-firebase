@@ -82,7 +82,8 @@ const signIn = async (e) => {
 
     await writeUserData(user.uid, userSignIn);
 
-    alert(`User Logged`);
+    window.location = "/pages/landing-page.html"
+    
   } catch (error) {
     console.log({ error });
   }
