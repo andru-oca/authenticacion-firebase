@@ -11,3 +11,18 @@ Creacion de usuario en Firebase:
         * Add Firebase to the project with CDN:
         * Add FireStore to the project with CDN
         
+FireStore:
+Agregado de rules
+
+```
+{
+    "rules":{
+        "users":{
+            "$uid":{
+                ".read":"$uid === auth.uid",
+                ".write":"$uid === auth.uid"
+            }
+        }
+    }
+}
+```

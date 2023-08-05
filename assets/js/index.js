@@ -1,5 +1,6 @@
-import {app, auth , database } from "./config/firebaseInit.js"
+import { getFormData, getById, signUp } from "./config/utils.js";
 
-console.log(
-   app, auth , database
-);
+/**
+ * Sign Up process
+ */
+getById("signup").addEventListener("click", signUp);
